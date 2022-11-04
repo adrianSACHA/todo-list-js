@@ -1,13 +1,16 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: "Montserrat", sans-serif;
-  }
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  background-color: #edeff0;
+  word-break: break-word;
+}
