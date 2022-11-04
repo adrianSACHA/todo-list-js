@@ -1,6 +1,6 @@
 # todo-list-js
 
-![Currency-conventer](images/share.png)
+![TO-DO List](images/share.png)
 
 ## Table of content
 1. Demo
@@ -12,10 +12,10 @@
 https://adriansacha.github.io/todo-list-js/
 
 ## 📒 Description
-Simple To-Do list application using JavaScript.
+Simple To-Do list application using JavaScript. Add new task to do and then hit green check box if it's done. Trash when you done it.
 
 ## 👀 Preview
-![TO DO List DEMO](images/toDoListy.gif)
+![TO DO List DEMO](images/toDoList.gif)
 
 ## 💻 Technologies
 * HTML
