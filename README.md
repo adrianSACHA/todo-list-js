@@ -9,7 +9,7 @@
 1. Technologies
 
 ## DEMO
-https://adriansacha.github.io//
+https://adriansacha.github.io/todo-list-js/
 
 ## 📒 Description
 Simple To-Do list application using JavaScript.
