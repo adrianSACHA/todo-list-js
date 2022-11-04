@@ -15,7 +15,7 @@ https://adriansacha.github.io/todo-list-js/
 Simple To-Do list application using JavaScript.
 
 ## 👀 Preview
-![Currency conventer DEMO](images/Currency.gif)
+![TO DO List DEMO](images/toDoListy.gif)
 
 ## 💻 Technologies
 * HTML
