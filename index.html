@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/section.css">
-    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/tasks.css">
     <link rel="stylesheet" href="css/form.css">
     <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,21 +21,26 @@
 </head>
 
 <body class="body">
-    <div class="container">
-        <h1 class="container__header">Lista zadań</h1>
+    <main class="container">
+        <header>
+            <h1 class="container__header">Lista zadań</h1>
+        </header>
         <section class="section">
-            <h3 class="section__header">Dodaj nowe zadanie</h3>
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+           <div class="section__body">
             <form class="js-form form">
-                <input class="js-newTask form__text" autofocus placeholder="Co jest do zrobienia?" type="text" focus>
+                <input class="js-newTask form__input" autofocus placeholder="Co jest do zrobienia?" type="text">
                 <button class="form__button">Dodaj zadanie</button>
             </form>
+           </div>
         </section>
         <section class="section">
-            <h3 class="section__header">
+            <h2 class="section__header">
                 Lista zadań
-            </h3>
-            <ul class="js-tasks list"></ul>
+            </h2>
+            <ul class="js-tasks tasks"></ul>
         </section>
+    </main>
 </body>
 
 </html>
