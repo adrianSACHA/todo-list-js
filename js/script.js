@@ -5,7 +5,6 @@
     tasks.push({
       content: newTaskContent,
     });
-
     render();
   };
 
@@ -39,25 +38,25 @@
   };
 
   const render = () => {
-    let htmlString = "";
+    let tasksListHTMLContent = "";
 
     for (const task of tasks) {
-      htmlString += `
-    <li class="tasks__item">
-    <button class="tasks__button tasks__button--toggleDone js-toggleDone">${
-      task.done ? "✔" : ""}
-    </button>
-    <p class=" ${task.done ? "tasks__content--done" : ""}">
-     ${task.content}
-     </p>
-    <button class="tasks__button tasks__button--remove js-remove">
-    🗑️
-    </button>
-    </li>
+      tasksListHTMLContent += `
+        <li class="tasks__item">
+          <button class="tasks__button tasks__button--toggleDone js-toggleDone">${
+            task.done ? "✔" : ""}
+          </button>
+          <p class=" ${task.done ? "tasks__content--done" : ""}">
+          ${task.content}
+          </p>
+          <button class="tasks__button tasks__button--remove js-remove">
+          🗑️
+          </button>
+        </li>
     `;
     }
 
-    document.querySelector(".js-tasks").innerHTML = htmlString;
+    document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
     bindEvents();
   };
@@ -80,7 +79,6 @@
     render();
 
     const form = document.querySelector(".js-form");
-
     form.addEventListener("submit", onFormSubmit);
   };
 
