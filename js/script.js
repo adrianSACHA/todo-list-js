@@ -28,7 +28,7 @@
       });
     });
 
-    const toggleDoneButtons = document.querySelectorAll(".js-done");
+    const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
     toggleDoneButtons.forEach((toggleDoneButton, index) => {
       toggleDoneButton.addEventListener("click", () => {
@@ -43,13 +43,16 @@
 
     for (const task of tasks) {
       htmlString += `
-    <li 
-    class="list__item">
-    <button class="list__button list__button--green js-done">${
-      task.done ? "✔" : ""
-    }</button>
-    <p class=" ${task.done ? "list__item--done" : ""}"> ${task.content}</p>
-    <button class="list__button list__button--red js-remove">🗑️</button>
+    <li class="tasks__item">
+    <button class="tasks__button tasks__button--toggleDone js-toggleDone">${
+      task.done ? "✔" : ""}
+    </button>
+    <p class=" ${task.done ? "tasks__content--done" : ""}">
+     ${task.content}
+     </p>
+    <button class="tasks__button tasks__button--remove js-remove">
+    🗑️
+    </button>
     </li>
     `;
     }
