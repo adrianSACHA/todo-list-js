@@ -14,3 +14,9 @@
 .section__body {
   padding: 20px;
 }
+
+.section__tasksList {
+  background-color: white;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #ddd;
+}
