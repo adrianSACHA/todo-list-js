@@ -1,0 +1,60 @@
+.tasksList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+  .tasksList {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+}
+
+.tasksList__header {
+  padding: 20px;
+  margin: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .tasksList__header {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.tasksList__doneButtons {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .tasksList__doneButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.tasksList__doneButton {
+  color: hsl(180, 100%, 25%);
+  background-color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.tasksList__doneButton:hover {
+  color: hsl(180, 100%, 35%);
+}
+
+.tasksList__doneButton:active {
+  color: hsl(180, 100%, 55%);
+}
+
+.tasksList__doneButton:disabled {
+  color: rgb(204, 204, 204);
+}
