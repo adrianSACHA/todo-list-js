@@ -83,11 +83,10 @@
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
-    };
+  };
 
   const renderButtons = () => {
     const buttons = document.querySelector(".js-buttons");
-
     if (!tasks.length) {
       buttons.innerHTML = "";
       return;
