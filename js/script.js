@@ -9,13 +9,14 @@
 
   const addNewTask = (newTaskContent) => {
     tasks = [...tasks, { content: newTaskContent }];
-
     render();
   };
 
   const removeTask = (index) => {
-    tasks = [...tasks.slice(0, index), ...tasks.slice(index + 1)];
-
+    tasks = [
+      ...tasks.slice(0, index),
+      ...tasks.slice(index + 1)
+      ];
     render();
   };
 
@@ -28,7 +29,6 @@
       },
       ...tasks.slice(index + 1),
     ];
-
     render();
   };
 
@@ -67,7 +67,7 @@
     for (const task of tasks) {
       htmlString += `
       <li class="tasks__item ${
-        task.done && hideDoneTasks ? "tasks__item--done" : ""
+        task.done && hideDoneTasks ? "tasks__item--hidden" : ""
       }">
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✔" : ""}
